@@ -1,0 +1,140 @@
+/* Universal Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: #000000;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main {
+  padding-top: 69px;
+  width: 1200px;
+  margin: auto;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.navigation ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.navigation ul li {
+  margin: 0 10px;
+}
+.navigation a {
+  color: inherit;
+}
+.navigation a img {
+  margin: 10px;
+  height: 50px;
+}
+
+/* Banner */
+.hero-section {
+  width: 1200px;
+  height: 700px;
+  position: relative;
+  background: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*6mjqll*_ga*OTE3NTEwMjg1My4xNjY1Njk2NzE0*_ga_3LRZM6TM9L*MTY2NzU1MTQxOS41NC4xLjE2Njc1NTE0MjUuNTQuMC4w");
+}
+.hero-section .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  width: 100%;
+}
+
+/* Featured Tea */
+#featured-tea {
+  width: 1000px;
+  height: 700px;
+  margin: auto;
+  margin-top: 70px;
+}
+#featured-tea .tea-item img {
+  width: 300px;
+  height: 200px;
+  margin: 15px;
+}
+
+/* Locations */
+#locations {
+  height: 500px;
+  width: 1200px;
+  background: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*6mjqll*_ga*OTE3NTEwMjg1My4xNjY1Njk2NzE0*_ga_3LRZM6TM9L*MTY2NzU1MTQxOS41NC4xLjE2Njc1NTE0MjUuNTQuMC4w");
+  background-size: cover;
+  padding: 30px;
+}
+#locations .location {
+  opacity: 1;
+  height: 300px;
+  width: 300px;
+  margin: 0 20px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#locations .location h3 {
+  margin: 0;
+}
+
+/* Contact */
+#contact {
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+}
+
+/* Footer */
+footer {
+  text-align: left;
+  padding: 0 20px;
+}
+
+/* Typography Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 10px;
+  transition: font-size 0.25s ease;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=styles.css.map */
